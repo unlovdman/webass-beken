@@ -25,18 +25,21 @@ Sebelum menjalankan proyek ini, pastikan Anda telah menginstall:
 ## 🛠️ Instalasi
 
 1. Clone repository
+
 ```bash
 git clone [URL_REPOSITORY]
 cd praktikum-management-system
 ```
 
 2. Install dependencies
+
 ```bash
 npm install
 ```
 
 3. Konfigurasi environment variables
    Buat file `.env` di root directory dan isi dengan:
+
 ```env
 PORT=5000
 NODE_ENV=development
@@ -54,6 +57,7 @@ JWT_EXPIRES_IN=24h
 ```
 
 4. Jalankan server
+
 ```bash
 # Development mode dengan nodemon
 npm run dev
@@ -69,37 +73,38 @@ API documentation tersedia melalui Swagger UI di endpoint `/api-docs` setelah se
 ### Endpoint Utama:
 
 - 🔐 Authentication
+
   - POST /api/auth/register
   - POST /api/auth/login
-
 - 👥 Users
+
   - GET /api/users
   - GET /api/users/:id
   - PUT /api/users/:id
   - DELETE /api/users/:id
-
 - 📚 Praktikum
+
   - GET /api/praktikum
   - POST /api/praktikum
   - GET /api/praktikum/:id
   - PUT /api/praktikum/:id
   - DELETE /api/praktikum/:id
-
 - 👥 Kelompok
+
   - GET /api/kelompok
   - POST /api/kelompok
   - GET /api/kelompok/:id
   - PUT /api/kelompok/:id
   - DELETE /api/kelompok/:id
-
 - 📝 Asistensi
+
   - GET /api/asistensi
   - POST /api/asistensi
   - GET /api/asistensi/:id
   - PUT /api/asistensi/:id
   - DELETE /api/asistensi/:id
-
 - 📊 Nilai
+
   - GET /api/nilai
   - POST /api/nilai
   - GET /api/nilai/:id
@@ -109,7 +114,8 @@ API documentation tersedia melalui Swagger UI di endpoint `/api-docs` setelah se
 ## 🗄️ Database Structure
 
 Sistem menggunakan PostgreSQL dengan Sequelize ORM. Model utama meliputi:
-- User (dosen, asisten, mahasiswa)
+
+- User (admin, asisten, mahasiswa)
 - Praktikum
 - Kelompok
 - Asistensi
@@ -140,4 +146,4 @@ This project is licensed under the ISC License
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! 
+Contributions, issues, and feature requests are welcome!
